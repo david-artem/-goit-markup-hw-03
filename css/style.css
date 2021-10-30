@@ -9,7 +9,7 @@
   --button-hover: #188CE8;
   --studio-background-black: #2F303A;
   --studio-background-white: #ffffff;
-  --our-team--background-color: #E5E5E5;
+  --our-team--background-color: #F5F4FA;
   --footer-menu-contact: rgba(255, 255, 255, 0.6);
   --studio-dark : #000000;
   --portfolio-button-background: #F5F4FA;
@@ -168,15 +168,20 @@ img{
     margin-left: auto;
     
 } 
-    
+.contact-item:not(:last-child){
+    margin-right: 50px;
+}
+.contact-list{
+    color: var(--second-color-text);
+}  
 
     
-.contact-list:last-child{
+/* .contact-list:last-child{
     margin-right: 50px;
     text-align: left;
     color: var(--second-color-text);
     
-}
+} */
 .contact-list:hover,
 .contact-list:focus{    
     color: var(--accent-color);
@@ -190,6 +195,7 @@ img{
 
 /*----заголовок h1, + кнопка-----*/
 .hero {
+    margin: 0 auto;
     max-width: 1600px;
     padding: 200px 0;
     text-align: center;
@@ -297,7 +303,7 @@ img{
 
     color: var(--main-color-text)
 }
-.activity-item{
+.activity-item:not(:last-child){
     margin-right: 30px;
 }
 .activity-item :first-child{
@@ -309,7 +315,6 @@ img{
     background-color: var(--our-team--background-color);
 }
 .team-title{
-    padding-bottom: 50px;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -318,6 +323,11 @@ img{
     letter-spacing: 0.03em;
 
 }
+.team-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+}
 .list-menu{
     margin-top: 50px;
     justify-content: center;
@@ -325,12 +335,12 @@ img{
 }
 .team-list{
     text-align: center;
-    margin-left: 30px;
+    
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-title-color);
 }
-.team-list :last-child{
-    margin-right: 0;
+.team-list:not(:last-child){
+    margin-right: 30px;
 }
 /* .card-text{
     padding: 20px 30px;
@@ -338,12 +348,13 @@ img{
 } */
 
 .team-subtitle{
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 30px;
+    
     color: var(--main-color-text)
 
 
@@ -354,8 +365,8 @@ img{
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    /* padding-top: 10px;
+    padding-bottom: 30px; */
 
     color: var(--second-color-text)
 }
@@ -444,7 +455,7 @@ img{
 
 /* ---------подвал------- */
 .footer{
-    text-align: left;
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--studio-background-black)
@@ -464,18 +475,18 @@ img{
     font-style: normal;
     margin-top: 20px;
 }
-.autorization-nav .nav-item :not(:last-child){
+.nav-item:not(:last-child){
     margin-bottom: 9px;
-    
 }
+
 .menu-contact {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
-
     color: var(--footer-menu-contact);
-}   
+}  
+
+}
     .menu-contact:hover,
     .menu-contact:focus{
         color: var(--accent-color) ;
